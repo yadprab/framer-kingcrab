@@ -1,0 +1,49 @@
+nav {
+    padding: 1em;
+    background-color: var(--navBg);
+   max-width: 480px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20000;
+
+}
+
+.top--section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation--button {
+    @include svg-button;
+
+    .icon--wrapper {
+        height: 24px;
+    }
+}
+
+
+
+.mobile--nav--wrapper {
+
+    margin-top: 1.5em;
+
+    ul {
+        list-style: none;
+        display: grid;
+        gap: 1.5em;
+
+        li {
+            border-bottom: 1px solid var(--navLines);
+
+            a {
+                font-family: 'Circe';
+                color: var(--navText);
+                font-weight: 400;
+            }
+        }
+    }
+
+}

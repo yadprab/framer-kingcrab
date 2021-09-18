@@ -1,0 +1,22 @@
+#top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main--section {
+    margin-top: 128px;
+    padding: 3em 1em;
+
+
+    h1,p{
+        color: var(--Text1);
+       
+    }
+    h1{
+        max-width: 220px;
+    }
+    p{
+         max-width: 184px;
+    }
+}
