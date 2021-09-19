@@ -3,6 +3,8 @@ import { ImageComp } from "./ImageComp";
 import Nav from "./Nav";
 
 function HomePage() {
+
+
   return (
     <>
       <div className="Home--pageWrapper">

@@ -215,7 +215,8 @@ nav {
   padding: 3em 1em;
 }
 
-.main--section h1, .main--section p {
+.main--section h1,
+.main--section p {
   color: var(--Text1);
 }
 
@@ -225,5 +226,92 @@ nav {
 
 .main--section p {
   max-width: 184px;
+}
+
+.menu--area h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid var(--underLine);
+  max-width: 60px;
+  margin: 0 0 12px 0;
+}
+
+.food--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  gap: 0.5em;
+  margin: 0 0 1.5em 0;
+}
+
+.food--wrapper button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  line-height: 24px;
+  border-radius: 50px;
+  font-family: 'Circe';
+}
+
+.food--wrapper .notSelected {
+  background-color: unset;
+  border: unset;
+  color: var(--nonSelected);
+}
+
+.food--wrapper .selected {
+  background-color: var(--typeBg);
+  border: unset;
+  color: var(--typeText);
+}
+
+.dish--wrapper {
+  border-top: 1px solid var(--navLines);
+  border-bottom: 1px solid var(--navLines);
+  padding: 0.75em 0;
+}
+
+.dishes {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 12px;
+}
+
+.dishes button {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  line-height: 24px;
+  background-color: unset;
+  border-radius: 50px;
+}
+
+.dishes .selected {
+  border: 1px solid var(--selected);
+  color: var(--selected);
+}
+
+.dishes .notSelected {
+  color: var(--nonSelected);
+  border: 1px solid var(--nonSelected);
 }
 /*# sourceMappingURL=Styles.css.map */

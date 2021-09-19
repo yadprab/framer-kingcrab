@@ -13,7 +13,7 @@ export const NonVegData = [
     menu: [...chicken],
   },
   {
-    varieties: "Sea Food",
+    varieties: "SeaFood",
     menu: [...chicken],
   },
   {

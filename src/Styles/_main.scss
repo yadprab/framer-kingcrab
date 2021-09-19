@@ -9,14 +9,89 @@
     padding: 3em 1em;
 
 
-    h1,p{
+    h1,
+    p {
         color: var(--Text1);
-       
+
     }
-    h1{
+
+    h1 {
         max-width: 220px;
     }
-    p{
-         max-width: 184px;
+
+    p {
+        max-width: 184px;
     }
+}
+
+.menu--area {
+    h1 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--underLine);
+        max-width: 60px;
+        margin: 0 0 12px 0;
+    }
+}
+
+.food--wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5em;
+    margin: 0 0 1.5em 0;
+
+    button {
+        @include medium-button;
+        border-radius: 50px;
+        font-family: 'Circe';
+    }
+
+    .notSelected {
+        background-color: unset;
+        border: unset;
+        color: var(--nonSelected);
+    }
+
+    .selected {
+        background-color: var(--typeBg);
+        border: unset;
+        color: var(--typeText);
+    }
+
+}
+
+.dish--wrapper {
+    border-top: 1px solid var(--navLines);
+    border-bottom: 1px solid var(--navLines);
+    padding: 0.75em 0;
+}
+
+.dishes {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px;
+
+
+    button {
+        width: 100%;
+        @include medium-button;
+        background-color: unset;
+
+        border-radius: 50px;
+
+    }
+
+    .selected {
+        border: 1px solid var(--selected);
+        color: var(--selected);
+    }
+
+    .notSelected {
+        color: var(--nonSelected);
+        border: 1px solid var(--nonSelected);
+    }
+
+
+
 }
